@@ -11,7 +11,7 @@ namespace System.Linq
     {
         public static IEnumerable<TSource> Skip<TSource>(this IEnumerable<TSource> source, uint count)
         {
-            Skip( source, (int)count );
+            return Skip( source, (int)count );
         }
 
         public static IEnumerable<TSource> Skip<TSource>(this IEnumerable<TSource> source, int count)
@@ -120,9 +120,9 @@ namespace System.Linq
 
         public static IEnumerable<TSource> SkipLast<TSource>(this IEnumerable<TSource> source, uint count)
         {
-            SkipLast( source, (int)count );
+            return SkipLast( source, (int)count );
         }
-        
+
         public static IEnumerable<TSource> SkipLast<TSource>(this IEnumerable<TSource> source, int count)
         {
             if (source == null)
